@@ -10,12 +10,23 @@ html {
           box-sizing: inherit;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 @font-face {
     font-family: 'Avenir Heavy';
     src:
-        url('fonts/AvenirLT-Heavy.eot?#iefix') format('embedded-opentype'),
-        url('fonts/AvenirLT-Heavy.woff') format('woff'),
-        url('fonts/AvenirLT-Heavy.ttf') format('truetype');
+        url('../fonts/AvenirLT-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AvenirLT-Heavy.woff') format('woff'),
+        url('../fonts/AvenirLT-Heavy.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
@@ -23,9 +34,9 @@ html {
 @font-face {
     font-family: 'Avenir Roman';
     src:
-        url('fonts/AvenirLT-Roman.eot?#iefix') format('embedded-opentype'),
-        url('fonts/AvenirLT-Roman.woff') format('woff'),
-        url('fonts/AvenirLT-Roman.ttf') format('truetype');
+        url('../fonts/AvenirLT-Roman.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AvenirLT-Roman.woff') format('woff'),
+        url('../fonts/AvenirLT-Roman.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -33,9 +44,9 @@ html {
 @font-face {
     font-family: 'Avenir Medium';
     src:
-        url('fonts/AvenirLT-Medium.eot?#iefix') format('embedded-opentype'),
-        url('fonts/AvenirLT-Medium.woff') format('woff'),
-        url('fonts/AvenirLT-Medium.ttf') format('truetype');
+        url('../fonts/AvenirLT-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AvenirLT-Medium.woff') format('woff'),
+        url('../fonts/AvenirLT-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
@@ -43,9 +54,9 @@ html {
 @font-face {
     font-family: 'Avenir BookOblique';
     src:
-        url('fonts/AvenirLT-BookOblique.eot?#iefix') format('embedded-opentype'),
-        url('fonts/AvenirLT-BookOblique.woff') format('woff'),
-        url('fonts/AvenirLT-BookOblique.ttf') format('truetype');
+        url('../fonts/AvenirLT-BookOblique.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AvenirLT-BookOblique.woff') format('woff'),
+        url('../fonts/AvenirLT-BookOblique.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
 }
@@ -54,7 +65,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Avenir Heavy', Arial, sans-serif;
-  font-weight: ;
   font-size: 15px;
   line-height: 20px;
   color: #000000;
@@ -63,6 +73,10 @@ body {
 
 a {
   text-decoration: none;
+}
+
+ul {
+  list-style: none;
 }
 
 .container {
@@ -77,4 +91,64 @@ a {
   background-image: ;
   background-repeat: no-repeat;
   background-position: top center;
+}
+
+.header-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.navigation {
+  margin-left: auto;
+}
+
+.navigation-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.navigation-item {
+  margin-right: 10px;
+}
+
+.navigation-item:last-child {
+  margin-right: 0;
+}
+
+.intro {
+  display: flex;
+}
+
+.user-videos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.review {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.popular-instructors-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.popular-instructors-item {
+  margin-right: 40px;
+}
+
+.popular-instructors-item:last-child {
+  margin-right: 0;
+}
+
+.blog-posts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }

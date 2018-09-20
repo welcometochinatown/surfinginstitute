@@ -12,44 +12,40 @@ html {
 
 @font-face {
     font-family: 'Avenir Heavy';
-    src: url('AvenirLT-Heavy.eot');
-    src: local('Avenir LT 85 Heavy'), local('AvenirLT-Heavy'),
-        url('AvenirLT-Heavy.eot?#iefix') format('embedded-opentype'),
-        url('AvenirLT-Heavy.woff') format('woff'),
-        url('AvenirLT-Heavy.ttf') format('truetype');
+    src:
+        url('fonts/AvenirLT-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('fonts/AvenirLT-Heavy.woff') format('woff'),
+        url('fonts/AvenirLT-Heavy.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Avenir Roman';
-    src: url('AvenirLT-Roman.eot');
-    src: local('Avenir LT 55 Roman'), local('AvenirLT-Roman'),
-        url('AvenirLT-Roman.eot?#iefix') format('embedded-opentype'),
-        url('AvenirLT-Roman.woff') format('woff'),
-        url('AvenirLT-Roman.ttf') format('truetype');
+    src:
+        url('fonts/AvenirLT-Roman.eot?#iefix') format('embedded-opentype'),
+        url('fonts/AvenirLT-Roman.woff') format('woff'),
+        url('fonts/AvenirLT-Roman.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Avenir Medium';
-    src: url('AvenirLT-Medium.eot');
-    src: local('Avenir LT 65 Medium'), local('AvenirLT-Medium'),
-        url('AvenirLT-Medium.eot?#iefix') format('embedded-opentype'),
-        url('AvenirLT-Medium.woff') format('woff'),
-        url('AvenirLT-Medium.ttf') format('truetype');
+    src:
+        url('fonts/AvenirLT-Medium.eot?#iefix') format('embedded-opentype'),
+        url('fonts/AvenirLT-Medium.woff') format('woff'),
+        url('fonts/AvenirLT-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Avenir BookOblique';
-    src: url('AvenirLT-BookOblique.eot');
-    src: local('Avenir LT 45 Book Oblique'), local('AvenirLT-BookOblique'),
-        url('AvenirLT-BookOblique.eot?#iefix') format('embedded-opentype'),
-        url('AvenirLT-BookOblique.woff') format('woff'),
-        url('AvenirLT-BookOblique.ttf') format('truetype');
+    src:
+        url('fonts/AvenirLT-BookOblique.eot?#iefix') format('embedded-opentype'),
+        url('fonts/AvenirLT-BookOblique.woff') format('woff'),
+        url('fonts/AvenirLT-BookOblique.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
 }
@@ -57,10 +53,10 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: "", Arial, sans-serif;
+  font-family: 'Avenir Heavy', Arial, sans-serif;
   font-weight: ;
-  font-size: ;
-  line-height: ;
+  font-size: 15px;
+  line-height: 20px;
   color: #000000;
   background-color: #ffffff;
 }
